@@ -1,0 +1,31 @@
+body {
+    background-color: #f0f8ff; /* हल्का नीला बैकग्राउंड */
+    font-family: Arial, sans-serif; /* साफ़ फॉन्ट */
+    text-align: center; /* सब कुछ बीच में दिखेगा */
+    padding: 30px;
+    color: #333333; /* गहरा स्लेटी टेक्स्ट */
+}
+
+h1 {
+    color: #0076ff; /* हेडिंग का रंग चमकीला नीला */
+}
+
+h2 {
+    color: #555555;
+}
+
+ul {
+    list-style-type: none; /* बुलेट पॉइंट्स हट जाएंगे */
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 5px auto;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* हल्का सा शैडो प्रभाव */
+}
+
+
