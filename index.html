@@ -27,7 +27,25 @@
         <li>💻 Coding</li>
         <li>🎵 Music</li>
         <li>📚 Reading</li>
-    </ul><script>
+    </ul><script>    <!-- डार्क मोड बटन -->
+    <button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
+
+    <!-- डार्क मोड काम करने के लिए जावास्क्रिप्ट कोड -->
+    <script>
+    function toggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        
+        var btn = document.getElementById("darkBtn");
+        if (element.classList.contains("dark-mode")) {
+            btn.innerHTML = "☀️ Light Mode";
+        } else {
+            btn.innerHTML = "🌙 Dark Mode";
+        }
+    }
+        
+    </script>
+
 function toggleDarkMode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
