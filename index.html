@@ -9,6 +9,8 @@
 </head>
 
 <body>
+<!-- डार्क मोड बटन -->
+<button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
 
     <h1>Welcome to My Website 👋</h1>
 
@@ -25,7 +27,20 @@
         <li>💻 Coding</li>
         <li>🎵 Music</li>
         <li>📚 Reading</li>
-    </ul>
+    </ul><script>
+function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    
+    var btn = document.getElementById("darkBtn");
+    if (element.classList.contains("dark-mode")) {
+        btn.innerHTML = "☀️ Light Mode";
+    } else {
+        btn.innerHTML = "🌙 Dark Mode";
+    }
+}
+</script>
+
 
     <h3>My Goal</h3>
     <p>I want to become a good programmer.</p>
